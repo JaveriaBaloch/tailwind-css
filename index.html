@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body>
+
+    <main class="flex flex-col lg:flex-row lg:h-screen lg:justify-end bg-gradient-to-r from-red-200 to-blue-300">
+        <aside class="p-4 bg-gray-800 flex flex-col text-center lg:w-1/4">
+            <div class="logo-text flex flex-col">
+                <img class="h-32 w-32 self-center" src="./img/logo.png"/>
+                <h1 class="text-white uppercase font-medium text-2xl tracking-wider my-4">Healthy Juice Bar</h1>
+            </div>
+            <ul class="space-y-4">
+                <li class="my-2"><a class="text-gray-200 hover:bg-gray-700 p-2 hover:text-white rounded">Products</a></li>
+                <li class="my-2"><a class="text-gray-200 hover:bg-gray-700 p-2 hover:text-white rounded">Orders</a></li>
+                <li class="my-2"><a class="text-gray-200 hover:bg-gray-700 p-2 hover:text-white rounded">Inventory</a></li>
+                <li class="my-2"><a class="text-gray-200 hover:bg-gray-700 p-2 hover:text-white rounded">Customers</a></li>
+                <li class="my-2"><a class="text-gray-200 hover:bg-gray-700 p-2 hover:text-white rounded">Analytics</a></li>
+                <li class="my-2"><a class="text-gray-200 hover:bg-gray-700 p-2 hover:text-white rounded">Coupons</a></li>
+                <li class="my-2"><a class="text-gray-200 hover:bg-gray-700 p-2 hover:text-white  rounded text-3xl">&#9881;</a></li>
+            </ul>
+        </aside>
+        <section class="lg:w-3/4">
+            <div class=" p-4 flex justify-center items-center lg:justify-end bg-gradient-to-r from-red-400 to-blue-300 p-6">
+                <img class="h-8 w-8" src="./img/profile.png"/>
+                <small class="text-gray-500 mx-4">Javeria Baloch</small>
+            </div>
+            <div class="menu my-5 mx-4 flex justify-between	">
+                <div class="p1">
+                    <h1 class="text-left">All Products</h1>
+                </div>
+                <div class="p2 space-x-3">
+                    <button class="text-gray-100 bg-indigo-500 hover:text-white hover:bg-indigo-700 rounded p-2">Add +</button>
+                    <select class="border border-gary-300"> 
+                        <option>Bulk Action</option>
+                        <option>Delete</option>
+                        <option>Edit</option>
+                    </select>
+                </div>
+            </div>
+                <div class="overflow-x-auto">
+                    <table class="border border-gary-300 mx-5 self-center">
+                        <thead class="bg-gray-300">
+                            <tr>
+                                <th class="p-2 px-6">
+                                    <input type="checkbox"/>
+                                </th>
+                                <th class="p-2 px-6">ITEM</th>
+                                <th class="p-2 px-6">Status</th>
+                                <th class="p-2 px-6">Category</th>
+                                <th class="p-2 px-6">Stock</th>
+                                <th class="p-2 px-6">Price</th>
+                                <th class="p-2 px-6">Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-2 px-6"><input type="checkbox"/></td>
+                                <td class="p-2 px-6">Lemonade</td>
+                                <td class="p-2 px-6"><button></button></td>
+                                <td class="p-2 px-6">Juice</td>
+                                <td class="p-2 px-6">3</td>
+                                <td class="p-2 px-6">$ 1.2</td>
+                                <td class="p-2 px-6"><a href="#Edit">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 px-6"><input type="checkbox"/></td>
+                                <td class="p-2 px-6">Fresh Lemonade</td>
+                                <td class="p-2 px-6">Active</td>
+                                <td class="p-2 px-6">Juice</td>
+                                <td class="p-2 px-6">9</td>
+                                <td class="p-2 px-6">$ 2.2</td>
+                                <td class="p-2 px-6"><a href="#Edit">Edit</a></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="p-4 flex flex-col lg:justify-center my-5 text-center ">
+                    <p>10 of 180 products</p>
+                    <div class="flex space-x-5 justify-center">
+                        <a class="hover:text-white hover:bg-indigo-400 rounded-full p-2"> &#8592; </a> 
+                        <a class="hover:text-white hover:bg-indigo-400 rounded-full p-2"> 1 </a>
+                        <a class="hover:text-white hover:bg-indigo-400 rounded-full p-2"> 2 </a> 
+                        <a class="hover:text-white hover:bg-indigo-400 rounded-full p-2"> 3 </a>
+                        <a class="hover:text-white hover:bg-indigo-400 rounded-full p-2"> 4 </a> 
+                        <a class="hover:text-white hover:bg-indigo-400 rounded-full p-2"> &#8594; </a>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+</body>
+</html>
